@@ -48,9 +48,8 @@
             background-color: #f1f1f1;
         }
 
-        .three-column {
+        .one-column {
             display: grid;
-            grid-template-columns: 2fr 8fr 3fr;
             background-color: #FFF;
             grid-column-gap: 1em;
         }
@@ -89,11 +88,7 @@
         }
 
         .c2 {
-            display: grid;
-            grid-gap: 1em;
-            grid-template-columns: repeat(4, 1fr);
-            /* grid-template-rows: 1fr 1fr 1fr; */
-            grid-auto-rows: min-content;
+            grid-gap: 2em;
         }
 
         .h2-content {
@@ -108,6 +103,25 @@
             max-height: 130px;
         }
 
+        .contact-form {
+            width: 500px;
+            height: 500px;
+            margin: 100px auto;
+        }
+
+        .contact-input {
+            width: 91%;
+            padding: 15px;
+            margin: 5px;
+        }
+
+        .submit-button {
+            padding: 10px 25px;
+            background-color: #CCC;
+            float: right;
+            margin-top: 12px;
+        }
+
     </style>
 </head>
 <body class="main-container-grid">
@@ -116,7 +130,7 @@
         <h2>Akaljot Gujjar</h2>
     </div>
 
-    <div class="r2 three-column">
+    <div class="r2 two-column">
         <div class="c1 box-shadow">
             <h2 class="txt-center">Navigation</h2>
             <ul class="left-nav">
@@ -129,28 +143,21 @@
         </div>
 
         <div class="c2">
-            <h2 class="txt-center h2-content">Product Gallery</h2>
-            <img class="box-shadow" src="./images/1.jpg">
-            <img class="box-shadow" src="./images/2.jpg">
-            <img class="box-shadow" src="./images/3.jpg">
-            <img class="box-shadow" src="./images/4.jpg">
-            <img class="box-shadow" src="./images/5.jpeg">
-            <img class="box-shadow" src="./images/6.jpeg">
-            <img class="box-shadow" src="./images/7.jpeg">
-            <img class="box-shadow" src="./images/8.jpeg">
-            <img class="box-shadow" src="./images/9.jpeg">
-            <img class="box-shadow" src="./images/10.jpeg">
-            <img class="box-shadow" src="./images/11.jpeg">
-            <img class="box-shadow" src="./images/12.jpeg">
-        </div>
-
-        <div class="c3 box-shadow">
-            <h2 class="txt-center">Recent Products</h2>
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input placeholder="First Name" type="text" id="first-name" class="contact-input">
+                <input placeholder="Last Name" type="text" id="last-name" class="contact-input">
+                <input placeholder="Email" type="email" id="email" class="contact-input">
+                <button onclick="contact.goToHome()" class="submit-button" type="submit">Submit</button>
+            </form>
         </div>
     </div>
 
     <div class="r3">
         Copyright 2020 - Created by Akaljot Gujjar
     </div>
+
+
+    <script type="text/javascript" src="./js/contact.js"></script>
 </body>
 </html>

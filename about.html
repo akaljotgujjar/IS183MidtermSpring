@@ -48,11 +48,11 @@
             background-color: #f1f1f1;
         }
 
-        .three-column {
-            display: grid;
-            grid-template-columns: 2fr 8fr 3fr;
+        .one-column {
+            /* display: grid;
+            grid-template-columns: 2fr 8fr 1fr; */
             background-color: #FFF;
-            grid-column-gap: 1em;
+            /* grid-column-gap: 1em; */
         }
 
         .c1 {
@@ -108,6 +108,17 @@
             max-height: 130px;
         }
 
+        .back-button {
+            padding: 7px 16px;
+            background-color: #CCC;
+            float: right;
+            margin-bottom: 15px;
+        }
+
+        .back-button:hover {
+            background-color: #f1f1f1;
+        }
+
     </style>
 </head>
 <body class="main-container-grid">
@@ -116,36 +127,13 @@
         <h2>Akaljot Gujjar</h2>
     </div>
 
-    <div class="r2 three-column">
-        <div class="c1 box-shadow">
-            <h2 class="txt-center">Navigation</h2>
-            <ul class="left-nav">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./contact-us.html">Contact Us</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./login.html">Login</a></li>
-            </ul>
-        </div>
-
+    <div class="r2 one-column">
         <div class="c2">
-            <h2 class="txt-center h2-content">Product Gallery</h2>
-            <img class="box-shadow" src="./images/1.jpg">
-            <img class="box-shadow" src="./images/2.jpg">
-            <img class="box-shadow" src="./images/3.jpg">
-            <img class="box-shadow" src="./images/4.jpg">
-            <img class="box-shadow" src="./images/5.jpeg">
-            <img class="box-shadow" src="./images/6.jpeg">
-            <img class="box-shadow" src="./images/7.jpeg">
-            <img class="box-shadow" src="./images/8.jpeg">
-            <img class="box-shadow" src="./images/9.jpeg">
-            <img class="box-shadow" src="./images/10.jpeg">
-            <img class="box-shadow" src="./images/11.jpeg">
-            <img class="box-shadow" src="./images/12.jpeg">
-        </div>
-
-        <div class="c3 box-shadow">
-            <h2 class="txt-center">Recent Products</h2>
+            <a href="./index.html" class="back-button">Back to Home</a>
+            <h2>Company Information</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
     </div>
 
